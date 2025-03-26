@@ -1,0 +1,9 @@
+{
+	"name": "adf-edtech-etl",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "dc8ff6f2-de31-4e26-b6bf-30dff4f24ea8",
+		"tenantId": "c81b47ed-7480-424c-abb2-37f3a01da6ac"
+	}
+}
