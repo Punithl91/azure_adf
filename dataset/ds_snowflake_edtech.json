@@ -1,0 +1,45 @@
+{
+	"name": "ds_snowflake_edtech",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_snowflake_edtech",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [
+			{
+				"name": "COURSE_ID",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			},
+			{
+				"name": "COURSE_NAME",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "INSTRUCTOR_NAME",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "START_DATE",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "END_DATE",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "CREDITS",
+				"type": "NUMBER",
+				"precision": 38,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "RAW_EDTECH",
+			"table": "RAW_COURSES"
+		}
+	}
+}
