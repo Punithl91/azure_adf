@@ -23,11 +23,11 @@
 			},
 			{
 				"name": "START_DATE",
-				"type": "date"
+				"type": "varchar"
 			},
 			{
 				"name": "END_DATE",
-				"type": "date"
+				"type": "varchar"
 			},
 			{
 				"name": "CREDITS",
