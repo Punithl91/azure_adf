@@ -1,0 +1,48 @@
+{
+	"name": "ds_blob_storage",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azure_blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "courses.csv",
+				"container": "rawfilesedtech"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "COURSE_ID",
+				"type": "String"
+			},
+			{
+				"name": "COURSE_NAME",
+				"type": "String"
+			},
+			{
+				"name": "INSTRUCTOR_NAME",
+				"type": "String"
+			},
+			{
+				"name": "START_DATE",
+				"type": "String"
+			},
+			{
+				"name": "END_DATE",
+				"type": "String"
+			},
+			{
+				"name": "CREDITS",
+				"type": "String"
+			}
+		]
+	}
+}

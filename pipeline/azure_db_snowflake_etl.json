@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "copy_ads_snowflake",
+				"name": "copy_blob_snowflake",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -18,7 +18,7 @@
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
+							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
 						},
@@ -101,7 +101,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_adls_edtech",
+						"referenceName": "ds_blob_storage",
 						"type": "DatasetReference"
 					}
 				],
