@@ -110,8 +110,9 @@
 						],
 						"typeConversion": true,
 						"typeConversionSettings": {
-							"allowDataTruncation": false,
-							"treatBooleanAsNumber": false
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false,
+							"dateTimeFormat": "toDate({start_date}, 'yyyy-MM-dd'))"
 						}
 					}
 				},
