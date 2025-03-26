@@ -16,9 +16,15 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "AzureSqlSource",
-						"queryTimeout": "02:00:00",
-						"partitionOption": "None"
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
 					},
 					"sink": {
 						"type": "SnowflakeV2Sink",
@@ -33,7 +39,7 @@
 							{
 								"source": {
 									"name": "COURSE_ID",
-									"type": "Int32"
+									"type": "String"
 								},
 								"sink": {
 									"name": "COURSE_ID",
@@ -83,7 +89,7 @@
 							{
 								"source": {
 									"name": "CREDITS",
-									"type": "Int32"
+									"type": "String"
 								},
 								"sink": {
 									"name": "CREDITS",
@@ -95,7 +101,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_azure_sql_edtech",
+						"referenceName": "ds_adls_edtech",
 						"type": "DatasetReference"
 					}
 				],
