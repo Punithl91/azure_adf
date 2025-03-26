@@ -1,0 +1,43 @@
+{
+	"name": "ds_azure_sql_edtech",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azure_sql_source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "COURSE_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "COURSE_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "INSTRUCTOR_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "START_DATE",
+				"type": "date"
+			},
+			{
+				"name": "END_DATE",
+				"type": "date"
+			},
+			{
+				"name": "CREDITS",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "COURSES"
+		}
+	}
+}
